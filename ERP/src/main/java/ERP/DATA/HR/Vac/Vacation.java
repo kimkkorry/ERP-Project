@@ -15,4 +15,23 @@ import lombok.Setter;
 @Entity
 public class Vacation {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private String VA_Code;
+	
+	@Column(columnDefinition = "NUMERIC(7) NOT NULL")
+	private Integer VA_Year;
+	
+	@Column(length = 50)
+	private String VA_Name;
+	
+	@Column(columnDefinition = "DATETIME NOT NULL")
+	private String VA_Sdate;
+	
+	@Column(columnDefinition = "DATETIME NOT NULL")
+	private String VA_Edate;
+	
+	@Column(columnDefinition = "NUMERIC(2) NOT NULL")
+	private Integer VA_Count;
+	
 }

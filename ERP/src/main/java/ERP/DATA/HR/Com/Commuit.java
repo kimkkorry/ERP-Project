@@ -15,4 +15,30 @@ import lombok.Setter;
 @Entity
 public class Commuit {
 
+	@Id
+	private String CM_Num;
+	
+	@Column(columnDefinition = "DATETIME NOT NULL")
+	private String CM_Date;
+	
+	@Column(length = 10)
+	private String CM_Depart;
+	
+	@Column(length = 13)
+	private String CM_ENum;
+	
+	@Column(length = 10)
+	private String CM_Name;
+	
+	@Column(columnDefinition = "DATETIME NOT NULL")
+	private String Intime;
+	
+	@Column(columnDefinition = "DATETIME NOT NULL")
+	private String Outtime;
+	
+	@Column(columnDefinition = "DATETIME NOT NULL")
+	private String Worktime;
+	
+	@Column(length = 30)
+	private String CM_Reason;
 }

@@ -15,4 +15,18 @@ import lombok.Setter;
 @Entity
 public class Project {
 
+	@Id
+	private String PR_Num;
+	
+	@Column(length = 30)
+	private String PR_Name;
+	
+	@Column(length = 10)
+	private String PR_Team;
+	
+	@Column(length = 10)
+	private String PR_TL;
+	
+	@Column(length = 100)
+	private String PR_TM;
 }
