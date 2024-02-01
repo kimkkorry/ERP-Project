@@ -27,7 +27,7 @@ public class Employee {
 	@Column(length = 14)
 	private String Emp_SSN;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String Emp_date;
 	
 	@Column(length = 3)

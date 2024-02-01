@@ -18,7 +18,7 @@ public class Commuit {
 	@Id
 	private String CM_Num;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String CM_Date;
 	
 	@Column(length = 10)

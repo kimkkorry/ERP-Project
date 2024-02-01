@@ -18,7 +18,7 @@ public class Appointment {
 	@Id
 	private String AP_Num;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String AP_Date;
 	
 	@Column(length = 10)

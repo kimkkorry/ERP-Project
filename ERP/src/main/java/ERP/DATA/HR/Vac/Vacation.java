@@ -25,10 +25,10 @@ public class Vacation {
 	@Column(length = 50)
 	private String VA_Name;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String VA_Sdate;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String VA_Edate;
 	
 	@Column(columnDefinition = "NUMERIC(2) NOT NULL")

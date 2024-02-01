@@ -18,13 +18,13 @@ public class Vamanage {
 	@Id
 	private String VM_Num;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String VM_Adate;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String VM_Sdate;
 	
-	@Column(columnDefinition = "DATETIME NOT NULL")
+	@Column(columnDefinition = "DATE NOT NULL")
 	private String VM_Edate;
 	
 	@Column(length = 50)
