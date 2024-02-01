@@ -16,14 +16,30 @@ import lombok.Setter;
 public class Fix {
 
 	@Id
-	private String RE_Num;
+	private String FIX_Num;
 	
 	@Column(columnDefinition = "DATE NOT NULL")
-	private String Re_Date;
+	private String FIX_Date;
 	
 	@Column(length = 50)
-	private String Re_Title;
+	private String FIX_Title;
 	
 	@Column(length = 500)
-	private String RE_Con;
+	private String FIX_Content;
+	
+	@Column(length = 10)
+	private String FIX_PName;
+	
+	@Column(length = 13)
+	private String FIX_PNum;
+	
+	@Column(length = 30)
+	private String FIX_IName;
+	
+	@Column(length = 11)
+	private String FIX_ICode;
+	
+	@Column(columnDefinition = "NUMERIC(7) NOT NULL")
+	private Integer FIX_Price;
+	
 }
